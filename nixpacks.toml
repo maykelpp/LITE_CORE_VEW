@@ -1,19 +1,1 @@
-[phases.setup]
-nixPkgs = ["python310", "ffmpeg"]
 
-[phases.install]
-cmds = ["pip install -r requirements.txt"]
-
-[start]
-cmd = "gunicorn app:app"
-```
-
-### 6. **Estructura final de tu repositorio debe ser:**
-```
-tu-repositorio/
-├── app.py (tu código de Flask)
-├── requirements.txt
-├── Procfile
-├── railway.json
-├── nixpacks.toml
-└── downloads/ (carpeta vacía, se creará automáticamente)
